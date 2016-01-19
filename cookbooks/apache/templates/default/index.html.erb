@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample of Chef template</title>
+</head>
+<body>
+	<h1>Sample of Chef Template</h1>
+	<br>
+	<h2>Wellcome to <%=node["company"]%></h2>
+	<br>
+	<h2>Hello from <%= node["fqdn"]%> ! </h2>
+	<p> This Server <%= node["memory"]["total"].to_i / 1024 %> MB memory</p>
+	<p> This Server <%= node["memory"]["free"].to_i / 1024 %> MB memory free </p>
+	<p>
+		This is version 0.2.0 ofr the cookbook 
+		this change is simple but efective way of demostrating cookbook versions.
+	</p>
+</body>
+</html>
